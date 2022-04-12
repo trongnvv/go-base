@@ -1,0 +1,35 @@
+{
+  "mode": "dev",
+  "address": {
+    "server": {
+      "restful": ":9981",
+      "internal": ":55000"
+    }
+  },
+  "key": {
+    "private": "./configs/id_rsa",
+    "public": "./configs/id_rsa.pub",
+    "vib_public_key": "./configs/id_rsa_vib.pub"
+  },
+  "log": {
+    "file_name": "./logs/pi_vib.log",
+    "max_size": 2,
+    "max_age": 2,
+    "max_backups": 2,
+    "compress": true
+  },
+  "token": {
+    "access_secret": "secret_access",
+    "expire_access": "1h",
+    "refresh_secret": "secret_refresh",
+    "expire_refresh": "168h"
+  },
+  "pgsql": {
+    "host": "localhost",
+    "port": "5432",
+    "user": "trongnv1",
+    "db_name": "testDb",
+    "ssl_mode": "disable",
+    "password": "trongnv"
+  }
+}

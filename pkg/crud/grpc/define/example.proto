@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = ".";
+package crud;
+
+service Example {
+  rpc Create (CreateReq) returns (CreateRes);
+}
+
+message CreateReq {
+  string name = 1;
+}
+
+message CreateRes{
+}
